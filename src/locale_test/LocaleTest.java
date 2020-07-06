@@ -3,7 +3,7 @@ package locale_test;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
-public class Main {
+public class LocaleTest {
 
 	public static void main(String[] args) {
 		System.out.println("1 - русский \n2 - английский \nлюбой - белорусский");
