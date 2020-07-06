@@ -4,7 +4,7 @@ import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class Main {
-	
+
 	public static void main(String[] args) {
 		System.out.println("1 - русский \n2 - английский \nлюбой - белорусский");
 		for (int i = 0; i < 3; i++) {
@@ -21,7 +21,7 @@ public class Main {
 				break;
 			}
 			Locale locale = new Locale(language, country);
-			ResourceBundle rb = ResourceBundle.getBundle("property.text", locale);
+			ResourceBundle rb = ResourceBundle.getBundle("property.locale", locale);
 			String first = rb.getString("s1");
 			String second = rb.getString("s2");
 			System.out.println(i + 1 + ":\n" + first + "\n" + second);
