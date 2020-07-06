@@ -22,9 +22,9 @@ public class LocaleTest {
 			}
 			Locale locale = new Locale(language, country);
 			ResourceBundle rb = ResourceBundle.getBundle("property.locale", locale);
-			String first = rb.getString("s1");
-			String second = rb.getString("s2");
-			System.out.println(i + 1 + ":\n" + first + "\n" + second);
+			String firstLine = rb.getString("s1");
+			String secondLine = rb.getString("s2");
+			System.out.println(i + 1 + ":\n" + firstLine + "\n" + secondLine);
 		}
 
 	}
